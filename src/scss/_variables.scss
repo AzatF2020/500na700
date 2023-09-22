@@ -1,13 +1,12 @@
 :root {
-  --primary-color: #418dd9;
-  --text-color: #000d1a;
-  --dark-bg: #1f262d;
-  --bg: white;
-  --onest: "Onest", sans-serif;
-  --content-padding: 4rem;
-  --container-width: 152.4rem;
+  --bg-color: #0B0A0D;
+  --white-fz-color: #FFF;
+  --black-fz-color: #0B0A0D;
 
-  @include breakpoint(mobile) {
-    --content-padding: 1.6rem;
-  }
+  --title-fz: 8rem;
+  --standart-fz: 2.4rem;
+  --normal-fz: 1.6rem;
+  --small-fz: 1.4rem;
+
+  --container: 0 10rem;
 }

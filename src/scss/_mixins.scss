@@ -1,0 +1,7 @@
+@mixin font_size_main() {
+  color: var(--white-fz-color);
+  font-size: var(--normal-fz);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

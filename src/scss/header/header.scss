@@ -1,0 +1,38 @@
+.header {
+  color: var(--white-fz-color);
+
+  position: fixed;
+
+  &__container {
+    margin: var(--container);
+    height: 21.2rem;
+
+    display: flex;
+    align-items: center;
+    column-gap: 21.2rem;
+  }
+
+  &__logo {
+    width: 4.2rem;
+    height: 5rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    column-gap: 3rem;
+  }
+
+  &__item {
+    transition: .4s ease opacity;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &__link {
+    @include font_size_main();
+  }
+}

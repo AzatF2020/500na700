@@ -1,5 +1,14 @@
-<header>
-    <h2>
-        Page header
-    </h2>
+<header class="header">
+  <div class="header__container">
+      <img src="src/icons/logo.svg" alt="logo" class="header__logo">
+      <nav class="header__nav">
+          <ul class="header__list">
+              {{#each header_nav}}
+              <li class="header__item">
+                  <a href="{{this.href}}" class="header__link">{{this.text}}</a>
+              </li>
+              {{/each}}
+          </ul>
+      </nav>
+  </div>
 </header>
