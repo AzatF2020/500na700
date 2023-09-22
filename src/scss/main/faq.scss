@@ -1,0 +1,77 @@
+.faq {
+  margin-top: 15rem;
+
+  &__container {
+    margin: var(--container);
+    display: flex;
+
+    column-gap: 10rem;
+  }
+
+  &__title {
+    font-family: 'M PLUS 1p', sans-serif !important;
+    color: var(--white-fz-color);
+    font-size: var(--title-fz);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.24rem;
+  }
+
+  &__accordion {
+    width: 100% !important;
+    max-width: 98.8rem;
+  }
+
+  &__block-accordion {
+    transition: .4s ease border-top;
+
+    background-color: transparent !important;
+    border: none !important;
+    border-top: .1rem solid rgba(255, 255, 255, 0.3) !important;
+
+    font-weight: 400 !important;
+
+  }
+  &__block-accordion.is-active {
+    transition: .4s ease border-top;
+
+    background-color: transparent !important;
+    border: none !important;
+    border-top: .1rem solid white !important;
+
+    font-weight: 400 !important;
+  }
+
+  &__trigger {
+    font-family: 'M PLUS 1p', sans-serif !important;
+    font-size: var(--standart-fz) !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+
+    color: var(--white-fz-color) !important;
+
+    padding: 3rem .8rem !important;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__text-accordion {
+    font-family: 'M PLUS 1p', sans-serif !important;
+    font-size: var(--normal-fz) !important;
+    font-style: normal !important;
+    line-height: normal !important;
+
+    color: var(--white-fz-color) !important;
+    font-weight: 400 !important;
+
+    width: 100% !important;
+    max-width: 76.7rem !important;
+    word-break: break-all;
+
+    padding: 0 .8rem 3rem  !important;
+  }
+}

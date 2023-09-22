@@ -1,14 +1,14 @@
 <section class="faq">
   <div class="faq__container">
     <h2 class="faq__title">FAQ</h2>
-    <div class="faq__accordion">
+    <div class="faq__accordion js-accord">
       {{#each faq_accordion}}
-      <div class="ac">
-        <h2 class="ac-header">
-          <button type="button" class="ac-trigger">{{this.title}}</button>
+      <div class="ac faq__block-accordion">
+        <h2 class="ac-header faq__header-accordion">
+          <button type="button" class="ac-trigger faq__trigger">{{this.title}}</button>
         </h2>
-        <div class="ac-panel">
-          <p class="ac-text">{{this.text}}</p>
+        <div class="ac-panel faq__panel">
+          <p class="ac-text faq__text-accordion">{{this.text}}</p>
         </div>
       </div>
       {{/each}}

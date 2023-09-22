@@ -1,5 +1,7 @@
-import initSlider from "./modules/slider.ts";
+import InitSlider from "./modules/Slider.ts";
+import InitAccordion from "./modules/Accordion.ts";
 
 window.addEventListener("DOMContentLoaded", () => {
-  initSlider()
+  InitSlider()
+  InitAccordion()
 })

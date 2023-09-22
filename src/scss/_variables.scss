@@ -1,7 +1,9 @@
 :root {
   --bg-color: #0B0A0D;
+  --white-bg-color: #FFF;
+
   --white-fz-color: #FFF;
-  --black-fz-color: #0B0A0D;
+  --black-fz-color: #0b0a0d;
 
   --title-fz: 8rem;
   --standart-fz: 2.4rem;
@@ -13,7 +15,7 @@
   --header-height: 10rem
 }
 
-$ui-index-1: 1; // Для наползающих элементов в общем потоке
+$ui-index-1: 1; // Для наползающих элементов в едином потоке
 $ui-index-2: 2; // Для наползающих элементов в общем потоке
 $ui-index-3: 3; // Для масок
 $ui-index-4: 4; // Для сайдбаров
