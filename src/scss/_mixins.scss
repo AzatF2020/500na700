@@ -1,7 +1,16 @@
-@mixin font_size_main() {
+@mixin font-main() {
   color: var(--white-fz-color);
   font-size: var(--normal-fz);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@mixin font-title() {
+  color: var(--white-fz-color);
+  font-size: var(--title-fz);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.24rem;
 }

@@ -1,0 +1,17 @@
+<section class="faq">
+  <div class="faq__container">
+    <h2 class="faq__title">FAQ</h2>
+    <div class="faq__accordion">
+      {{#each faq_accordion}}
+      <div class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">{{this.title}}</button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">{{this.text}}</p>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

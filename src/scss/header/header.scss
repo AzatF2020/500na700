@@ -1,15 +1,27 @@
 .header {
+  width: 100%;
+  background-color: var(--bg-color);
   color: var(--white-fz-color);
 
   position: fixed;
 
+  z-index: $ui-index-4;
+
   &__container {
     margin: var(--container);
-    height: 21.2rem;
+    height: var(--header-height);
 
     display: flex;
     align-items: center;
     column-gap: 21.2rem;
+  }
+
+  &__logo-link {
+    transition: .4s ease opacity;
+
+    &:hover {
+      opacity: .6;
+    }
   }
 
   &__logo {
@@ -33,6 +45,6 @@
   }
 
   &__link {
-    @include font_size_main();
+    @include font-main();
   }
 }
