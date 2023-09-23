@@ -12,7 +12,28 @@
 
   --container: 0 10rem;
 
-  --header-height: 10rem
+  --header-height: 10rem;
+}
+
+@include breakpoint(tablet) {
+  :root {
+    --standart-fz: 24px;
+    --normal-fz: 16px;
+    --small-fz: 14px;
+
+    --container: 0 40px;
+
+    --header-height: 120px;
+  }
+}
+
+@include breakpoint(small-tablet) {
+  :root {
+    --title-fz: 40px;
+    --container: 0 15px;
+
+    --header-height: 120px;
+  }
 }
 
 $ui-index-1: 1; // Для наползающих элементов в едином потоке

@@ -3,6 +3,11 @@
   padding: 5rem 0;
   margin-top: 11rem;
 
+  @include breakpoint(tablet) {
+    margin-top: 110px;
+    padding: 30px 0;
+  }
+
   &__container {
     margin: var(--container);
   }
@@ -22,16 +27,37 @@
     font-weight: 400;
 
     margin-top: 3rem;
+
+    @include breakpoint(tablet) {
+      margin-top: 20px;
+      max-width: 100%;
+    }
   }
 
   &__form {
     margin-top: 1.5rem;
+
+    @include breakpoint(tablet) {
+      margin-top: 20px;
+    }
   }
 
   &__form-block {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
     gap: 2.5rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+      gap: 0;
+      row-gap: 25px;
+    }
+
+    @include breakpoint(small-tablet) {
+      grid-template-columns: 1fr;
+      gap: 0;
+      row-gap: 20px;
+    }
   }
 
   &__form-input {
@@ -59,6 +85,23 @@
     &:not(:placeholder-shown) {
       border: .1rem solid #000;
     }
+
+    @include breakpoint(tablet) {
+      width: 290px;
+      height: 48px;
+      padding: 15px 20px;
+
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.40);
+
+      &:focus {
+        border: 1px solid #000;
+      }
+
+      &:not(:placeholder-shown) {
+        border: 1px solid #000;
+      }
+    }
   }
 
   &__form-wrapper {
@@ -70,6 +113,9 @@
       font-size: 1.2rem;
       position: absolute;
 
+      @include breakpoint(tablet) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -94,6 +140,22 @@
       background: #75FF72;
       border: .1rem solid #75FF72;
       color: black;
+
+      transition: .4s ease opacity;
+
+      &:hover {
+        opacity: .6;
+      }
+    }
+
+    @include breakpoint(tablet) {
+      width: 124px;
+      height: 44px;
+      border: 1px solid rgba(0, 0, 0, 0.40);
+
+      &--active {
+        border: 1px solid #75FF72;
+      }
     }
   }
 }

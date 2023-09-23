@@ -4,6 +4,11 @@
   align-items: center;
   background: #312F35;
 
+
+  @include breakpoint(tablet) {
+    height: 440px;
+  }
+
   &__container {
     margin: var(--container);
 
@@ -11,6 +16,14 @@
     grid-template-columns: repeat(2, 1fr);
 
     column-gap: 20rem;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      flex-direction: column;
+
+      column-gap: 0;
+      row-gap: 40px;
+    }
   }
 
   &__info {
@@ -22,6 +35,11 @@
 
     width: 100%;
     max-width: 40rem;
+
+    @include breakpoint(tablet) {
+      max-width: 100%;
+      row-gap: 10px;
+    }
   }
 
   &__title {
@@ -43,14 +61,20 @@
     &:hover {
       opacity: .6;
     }
-  }
 
-  &__nav {
+    @include breakpoint(tablet) {
+      margin-top: 14px;
+    }
   }
 
   &__social-links {
     display: flex;
     column-gap: 3rem;
+
+    @include breakpoint(tablet) {
+      column-gap: 30px;
+      justify-content: center;
+    }
   }
 
   &__social-item {
@@ -61,6 +85,11 @@
 
     &:hover {
       opacity: .6;
+    }
+
+    @include breakpoint(tablet) {
+      width: 28px;
+      height: 28px;
     }
   }
 

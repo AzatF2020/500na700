@@ -1,6 +1,6 @@
 @mixin font-small() {
   font-family: 'M PLUS 1p', sans-serif;
-  font-size: 1.4rem;
+  font-size: var(--small-fz);
   font-style: normal;
   font-weight: 500;
   line-height: normal;

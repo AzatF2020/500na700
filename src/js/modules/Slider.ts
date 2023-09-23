@@ -11,7 +11,6 @@ export default function InitSlider(): void {
 
     let swiper = new Swiper(slider, {
       modules: [Navigation, Parallax, ...args],
-      centeredSlides: true,
       spaceBetween: 20,
       autoplay: {
         delay: 3500
@@ -25,15 +24,24 @@ export default function InitSlider(): void {
         nextEl: ".js-button-next",
       }
     })
-
-    swiper.init()
+    swiper.init();
   }
 
   sliders.forEach((slider: HTMLDivElement) => {
-    let dataAttrModule = slider.dataset.autoplay
+    let dataAttrModule = slider.dataset.autoplay;
+    let dataAttrMonitor = slider.dataset.desktop;
 
-    dataAttrModule === "true" ?
-      initSwiper(slider, Autoplay) :
+    if(dataAttrMonitor === "false") {
+
+      if(window.matchMedia("(max-width: 1024px)").matches) {
+        initSwiper(slider)
+        console.log(dataAttrMonitor === "false")
+      }
+
+    } else if(dataAttrModule === "true") {
+      initSwiper(slider, Autoplay)
+    } else {
       initSwiper(slider)
+    }
   })
 }

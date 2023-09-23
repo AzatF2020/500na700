@@ -10,10 +10,16 @@
   &__container {
     margin: var(--container);
     height: var(--header-height);
+    position: relative;
 
     display: flex;
     align-items: center;
     column-gap: 21.2rem;
+
+    @include breakpoint(tablet) {
+      column-gap: 0;
+      justify-content: space-between;
+    }
   }
 
   &__logo-link {
@@ -27,6 +33,16 @@
   &__logo {
     width: 4.2rem;
     height: 5rem;
+    @include breakpoint(tablet) {
+      width: 42px;
+      height: 50px;
+    }
+  }
+
+  &__nav {
+    @include breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__list {
@@ -46,5 +62,24 @@
 
   &__link {
     @include font-main();
+  }
+
+  &__burger-btn {
+    display: none;
+    span {
+      width: 36px;
+      height: 3px;
+      background: white;
+      &:last-child {
+        width: 18px;
+      }
+    }
+
+    @include breakpoint(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      row-gap: 7.5px;
+    }
   }
 }
