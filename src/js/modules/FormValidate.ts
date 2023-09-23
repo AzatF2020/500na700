@@ -1,5 +1,6 @@
 import Form from "./Form.ts";
 import validator from "validator";
+import IMask from "imask";
 
 export default class FormValidate extends Form {
   protected validityInputs: Map<HTMLInputElement, boolean>
@@ -26,9 +27,17 @@ export default class FormValidate extends Form {
     })
   }
 
+  private initMaskInput(input: HTMLInputElement) {
+    if(input.name === "phone") {
+      IMask(input, {mask: '+{7}(000)000-00-00'})
+    }
+  }
+
   private validate() {
     this.getFormInputs?.forEach((input: HTMLInputElement) => {
       this.validityInputs.set(input, false)
+      this.initMaskInput(input)
+
       input.addEventListener("input", () => {
         this.validityInputs.set(input, !validator.isEmpty(input.value))
 
