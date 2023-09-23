@@ -12,6 +12,7 @@ export default function InitSlider(): void {
     let swiper = new Swiper(slider, {
       modules: [Navigation, Parallax, ...args],
       spaceBetween: 20,
+      loop: true,
       autoplay: {
         delay: 3500
       },

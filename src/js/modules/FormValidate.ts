@@ -40,7 +40,6 @@ export default class FormValidate extends Form {
 
       input.addEventListener("input", () => {
         this.validityInputs.set(input, !validator.isEmpty(input.value))
-
         this.initValidationInput([...this.validityInputs.values()])
       })
     })

@@ -1,4 +1,3 @@
-import "jquery/dist/jquery.slim.min.js"
 import InitSlider from "./modules/Slider.ts";
 import InitAccordion from "./modules/Accordion.ts";
 import FormValidate from "./modules/FormValidate.ts";

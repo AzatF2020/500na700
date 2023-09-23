@@ -1,5 +1,4 @@
 import Form from "./Form.ts";
-import "parsleyjs"
 
 export default class FormSender extends Form {
   constructor() {
@@ -12,10 +11,11 @@ export default class FormSender extends Form {
     form.addEventListener("submit", (event: Event) => {
       event.preventDefault()
 
+      //@ts-ignore
       $(form).parsley().validate()
-      if($(form).parsley.isValid()) {
+      //@ts-ignore
+      if($(form).parsley().isValid()) {
         try {
-          console.log("Отправилось")
           const url: string = form.action
           const formData = new FormData(form)
 
@@ -25,8 +25,9 @@ export default class FormSender extends Form {
           })
             .then((response) => {
               if (response.ok) {
-                /* some code */
+                /* code */
               } else {
+                console.log("Логика при отправки формы")
                 throw Promise.reject(response)
               }
             })

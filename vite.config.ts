@@ -8,7 +8,6 @@ import pagesConfig from "./pages.config";
 
 export default {
   build: {
-
     rollupOptions: {
       output: {
         entryFileNames: `assets/main.js`,

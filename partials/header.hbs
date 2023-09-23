@@ -5,9 +5,16 @@
       </a>
       <nav class="header__nav">
           <ul class="header__list">
-              {{#each header_nav}}
-              <li class="header__item">
-                  <a href="{{this.href}}" class="header__link">{{this.text}}</a>
+              {{#each navigation}}
+              <li class="header__item" data-dropdown="{{this.text}}">
+                  <button class="header__button">{{this.text}}</button>
+                  <ul class="header__dropdown" data-dropdown="{{this.text}}">
+                  {{#each links}}
+                    <li class="header__item-link">
+                      <a href="{{this.href}}">{{this.text}}</a>
+                    </li>
+                  {{/each}}
+                  </ul>
               </li>
               {{/each}}
           </ul>

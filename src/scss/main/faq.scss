@@ -37,7 +37,7 @@
   }
 
   &__block-accordion {
-    transition: .4s ease border-top;
+    transition: .4s ease all;
 
     background-color: transparent !important;
     border: none !important;
@@ -47,6 +47,9 @@
 
     @include breakpoint(tablet) {
       border-top: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    &:last-child {
+      border-bottom: .1rem solid rgba(255, 255, 255, 0.3) !important;
     }
   }
 
@@ -61,6 +64,9 @@
 
     @include breakpoint(tablet) {
       border-top: 1.5px solid white !important;
+    }
+    &:last-child {
+      border-bottom: .1rem solid rgba(255, 255, 255, 0.3) !important;
     }
   }
 
