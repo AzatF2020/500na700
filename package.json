@@ -25,6 +25,8 @@
     "accordion-js": "^3.3.4",
     "gsap": "^3.12.2",
     "inputmask": "^5.0.8",
+    "jquery": "^3.7.1",
+    "parsleyjs": "^2.9.2",
     "swiper": "^10.2.0",
     "validator": "^13.11.0"
   }

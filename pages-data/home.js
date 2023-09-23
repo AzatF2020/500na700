@@ -87,6 +87,24 @@ const home = {
         text: "ОписаниОписание Описание  Описание Описание Описание  Описаниее",
         href: "/#"
       },
+    ],
+    footer_links: [
+      {
+        img: "src/icons/vk.svg",
+        href: "/#"
+      },
+      {
+        img: "src/icons/fb.svg",
+        href: "/#"
+      },
+      {
+        img: "src/icons/inst.svg",
+        href: "/#"
+      },
+      {
+        img: "src/icons/youtube.svg",
+        href: "/#"
+      },
     ]
   },
 };

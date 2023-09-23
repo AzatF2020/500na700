@@ -31,7 +31,7 @@
   &__form-block {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   &__form-input {
@@ -61,6 +61,18 @@
     }
   }
 
+  &__form-wrapper {
+    position: relative;
+
+    .parsley-errors-list {
+      color: red;
+      @include font-small();
+      font-size: 1.2rem;
+      position: absolute;
+
+    }
+  }
+
   &__form-button {
     width: 14.1rem;
     height: 5rem;
@@ -72,6 +84,16 @@
 
     border: .1rem solid rgba(0, 0, 0, 0.40);
 
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+
+    cursor: default;
+
+    &--active {
+      cursor: pointer;
+
+      background: #75FF72;
+      border: .1rem solid #75FF72;
+      color: black;
+    }
   }
 }

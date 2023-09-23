@@ -15,6 +15,4 @@ export default function InitAccordion(): void {
   accordions.forEach((accordion: HTMLDivElement) => {
     initAccordionElement(accordion)
   })
-
-
 }
