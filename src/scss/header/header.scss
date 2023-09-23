@@ -1,16 +1,13 @@
 .header {
-  width: 100%;
-  background-color: var(--bg-color);
   color: var(--white-fz-color);
 
-  position: fixed;
-
-  z-index: $ui-index-4;
-
   &__container {
-    margin: var(--container);
+    padding: var(--container);
     height: var(--header-height);
-    position: relative;
+    position: fixed;
+    z-index: $ui-index-4;
+    background-color: var(--bg-color);
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -67,6 +64,7 @@
   &__burger-btn {
     display: none;
     span {
+      transition: .6s ease all;
       width: 36px;
       height: 3px;
       background: white;
@@ -80,6 +78,28 @@
       flex-direction: column;
       align-items: flex-end;
       row-gap: 7.5px;
+
+      position: fixed;
+      z-index: 10;
+
+      top: 45px;
+      right: 15px;
+    }
+    &--active {
+      span {
+        transition: .6s ease all;
+        &:first-child {
+          width: 40px;
+          transform: rotate(45deg) translate(0, 15px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          width: 40px;
+          transform: rotate(-45deg) translate(0, -15px);
+        }
+      }
     }
   }
 }
