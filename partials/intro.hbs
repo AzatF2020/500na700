@@ -1,0 +1,24 @@
+<section class="intro">
+  <div class="intro__container">
+    <div class="intro__swiper js-slider" data-autoplay="true">
+      <div class="swiper-wrapper">
+        {{#each intro_slides}}
+        <div class="swiper-slide">
+          <div class="intro__slide">
+            <img src="{{this.img}}" alt="image" class="intro__image">
+            <h2 class="intro__slider-name">{{this.name}}</h2>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="intro__slider-buttons">
+        <button class="intro__slider-button js-button-prev">
+          <img src="src/icons/leftArrow.svg" alt="icon" class="intro__slider-icon">
+        </button>
+        <button class="intro__slider-button js-button-next">
+          <img src="src/icons/rightArrow.svg" alt="icon" class="intro__slider-icon"/>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

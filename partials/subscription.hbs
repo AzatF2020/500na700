@@ -1,0 +1,50 @@
+<section class="sub">
+  <div class="sub__container">
+    <h2 class="sub__title">Подпишись</h2>
+    <p class="sub__text">Отправляем анонсы новых статей, выпусков и трансляций</p>
+    <form action="#" class="sub__form js-form" data-parsley-validate>
+      <div class="sub__form-block">
+        <label class="sub__form-wrapper">
+          <input type="email"
+                 class="sub__form-input"
+                 placeholder="Email"
+                 name="email"
+                 required
+                 data-parsley-required-message="Обязательно поле*"
+                 data-parsley-type-message="Некорректно введен Email"/>
+        </label>
+        <label class="sub__form-wrapper">
+          <input type="text"
+                 class="sub__form-input"
+                 placeholder="Телефон"
+                 name="phone"
+                 data-parsley-minlength="16"
+                 data-parsley-minlength-message="Заполните поле полностью"
+                 required
+                 data-parsley-required-message="Обязательно поле*"/>
+        </label>
+        <label class="sub__form-wrapper">
+          <input type="text"
+                 class="sub__form-input"
+                 onfocus="(this.type='date')"
+                 onblur="(this.type='text')"
+                 placeholder="11.02.2022"
+                 name="date"
+                 required
+                 data-parsley-required-message="Обязательно поле*"/>
+        </label>
+        <label class="sub__form-wrapper">
+        <input type="text"
+               class="sub__form-input"
+               onfocus="(this.type='time')"
+               onblur="(this.type='text')"
+               placeholder="15:00"
+               name="time"
+               required
+               data-parsley-required-message="Обязательно поле*"/>
+        </label>
+      </div>
+      <button class="sub__form-button js-form-button" type="submit" disabled>Подписаться</button>
+    </form>
+  </div>
+</section>

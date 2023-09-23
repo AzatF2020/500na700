@@ -1,0 +1,29 @@
+<header class="header">
+  <div class="header__container">
+      <a href="/" class="header__logo-link">
+          <img src="src/icons/logo.svg" alt="logo" class="header__logo">
+      </a>
+      <nav class="header__nav">
+          <ul class="header__list">
+              {{#each navigation}}
+              <li class="header__item" data-dropdown="{{this.text}}">
+                  <button class="header__button">{{this.text}}</button>
+                  <ul class="header__dropdown" data-dropdown="{{this.text}}">
+                  {{#each links}}
+                    <li class="header__item-link">
+                      <a href="{{this.href}}">{{this.text}}</a>
+                    </li>
+                  {{/each}}
+                  </ul>
+              </li>
+              {{/each}}
+          </ul>
+      </nav>
+  </div>
+  <button class="header__burger-btn js-burger-button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+{{> burgerModal}}

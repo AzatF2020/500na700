@@ -1,0 +1,19 @@
+<div class="burger-modal burger-modal--active">
+  <div class="burger-modal__overlay"></div>
+  <div class="burger-modal__container js-burger-modal">
+    <div class="burger-modal__accord js-accord">
+      {{#each navigation}}
+      <div class="ac burger-modal__block-accordion">
+        <h2 class="ac-header burger-modal__header-accordion">
+          <button type="button" class="ac-trigger burger-modal__trigger">{{this.text}}</button>
+        </h2>
+        <div class="ac-panel burger-modal__panel">
+          {{#each this.links}}
+          <a href="{{this.href}}" class="ac-text burger-modal__text-accordion">{{this.text}}</a>
+          {{/each}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

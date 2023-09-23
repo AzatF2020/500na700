@@ -3,3 +3,14 @@
 
 @import "variables";
 @import "reset";
+@import "global";
+@import "mixins";
+
+@import "header/header";
+@import "footer/footer";
+@import "main/intro";
+@import "main/faq";
+@import "main/news";
+@import "main/subscription";
+
+@import "components/burgerModal";

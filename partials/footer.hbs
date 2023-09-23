@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__info">
+      <h5 class="footer__title">Заголовок</h5>
+      <p class="footer__text">ОписаниОписание Описание  Описание Описание Описание  Описаниее</p>
+      <a href="https://500na700.ru/" target="_blank" class="footer__link">500na700.ru</a>
+    </div>
+    <nav class="footer__nav">
+      <ul class="footer__social-links">
+        {{#each footer_links}}
+        <li class="footer__social-item">
+          <a href="{{this.href}}" target="_blank" class="footer__social-link">
+            <img src="{{this.img}}" alt="icon" class="footer__social-icon">
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="/src/js/main.ts"></script>

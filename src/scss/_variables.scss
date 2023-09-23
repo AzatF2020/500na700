@@ -1,13 +1,44 @@
 :root {
-  --primary-color: #418dd9;
-  --text-color: #000d1a;
-  --dark-bg: #1f262d;
-  --bg: white;
-  --onest: "Onest", sans-serif;
-  --content-padding: 4rem;
-  --container-width: 152.4rem;
+  --bg-color: #0B0A0D;
+  --white-bg-color: #FFF;
 
-  @include breakpoint(mobile) {
-    --content-padding: 1.6rem;
+  --white-fz-color: #FFF;
+  --black-fz-color: #0b0a0d;
+
+  --title-fz: 8rem;
+  --standart-fz: 2.4rem;
+  --normal-fz: 1.6rem;
+  --small-fz: 1.4rem;
+
+  --container: 0 10rem;
+
+  --header-height: 10rem;
+}
+
+@include breakpoint(tablet) {
+  :root {
+    --standart-fz: 24px;
+    --normal-fz: 16px;
+    --small-fz: 14px;
+
+    --container: 0 40px;
+
+    --header-height: 120px;
   }
 }
+
+@include breakpoint(small-tablet) {
+  :root {
+    --title-fz: 40px;
+    --container: 0 15px;
+
+    --header-height: 120px;
+  }
+}
+
+$ui-index-1: 1; // Для наползающих элементов в едином потоке
+$ui-index-2: 2; // Для наползающих элементов в общем потоке
+$ui-index-3: 3; // Для масок
+$ui-index-4: 4; // Для сайдбаров
+$ui-index-5: 5; // Для модалок
+$ui-index-6: 6; // Для элементов, перекрывающих все

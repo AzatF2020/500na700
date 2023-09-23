@@ -1,0 +1,22 @@
+<section class="news">
+  <div class="news__container">
+    <h2 class="news__title">Новости</h2>
+    <div class="news__slider js-slider" data-desktop="false">
+      <ul class="swiper-wrapper news__cards">
+        {{#each news__cards}}
+        <li class="news__card swiper-slide">
+          <a href="{{this.href}}" class="news__card-link">
+            <div class="news__card-img-wrapper">
+             <img src="{{this.img}}" alt="" class="news__card-image">
+            </div>
+            <div class="news__card-info">
+              <h5 class="news__card-name">{{this.name}}</h5>
+              <p class="news__card-text">{{this.text}}</p>
+            </div>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>

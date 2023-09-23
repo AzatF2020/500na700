@@ -1,8 +1,14 @@
-import "virtual:svg-icons-register";
-import "../scss/style.scss";
+import InitSlider from "./modules/Slider.ts";
+import InitAccordion from "./modules/Accordion.ts";
+import FormValidate from "./modules/FormValidate.ts";
+import FormSender from "./modules/FormSender.ts";
+import InitBurgerModal from "./modules/BurgerModal.ts";
 
-document.addEventListener("DOMContentLoaded", () => {});
+window.addEventListener("DOMContentLoaded", () => {
+  InitBurgerModal()
+  InitSlider()
+  InitAccordion()
 
-window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
-});
+  new FormSender().sendData()
+  new FormValidate().render()
+})
