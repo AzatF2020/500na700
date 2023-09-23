@@ -16,20 +16,20 @@
         <label class="sub__form-wrapper">
           <input type="text"
                  class="sub__form-input"
-                 placeholder="Телефон"
-                 name="phone"
-                 data-parsley-minlength="16"
-                 data-parsley-minlength-message="Заполните поле полностью"
+                 onfocus="(this.type='date')"
+                 onblur="(this.type='text')"
+                 placeholder="11.02.2022"
+                 name="date"
                  required
                  data-parsley-required-message="Обязательно поле*"/>
         </label>
         <label class="sub__form-wrapper">
           <input type="text"
                  class="sub__form-input"
-                 onfocus="(this.type='date')"
-                 onblur="(this.type='text')"
-                 placeholder="11.02.2022"
-                 name="date"
+                 placeholder="Телефон"
+                 name="phone"
+                 data-parsley-minlength="16"
+                 data-parsley-minlength-message="Заполните поле полностью"
                  required
                  data-parsley-required-message="Обязательно поле*"/>
         </label>
