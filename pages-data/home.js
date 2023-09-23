@@ -130,15 +130,15 @@ const home = {
     ],
     intro_slides: [
       {
-        img: "src/images/introSlider1.png",
+        img: "images/introSlider1.png",
         name: "Слайд 1",
       },
       {
-        img: "src/images/introSlider1.png",
+        img: "images/introSlider1.png",
         name: "Слайд 2",
       },
       {
-        img: "src/images/introSlider1.png",
+        img: "images/introSlider1.png",
         name: "Слайд 3",
       }
     ],
@@ -158,37 +158,37 @@ const home = {
     ],
     news__cards: [
       {
-        img: "src/images/news1.png",
+        img: "images/news1.png",
         name: "Заголовок",
         text: "ОписаниОписание Описание  Описание Описание Описание  Описаниее",
         href: "/#"
       },
       {
-        img: "src/images/news2.png",
+        img: "images/news2.png",
         name: "Заголовок",
         text: "ОписаниОписание Описание  Описание Описание Описание  Описаниее",
         href: "/#"
       },
       {
-        img: "src/images/news3.png",
+        img: "images/news3.png",
         name: "Заголовок",
         text: "ОписаниОписание Описание  Описание Описание Описание  Описаниее",
         href: "/#"
       },
       {
-        img: "src/images/news4.png",
+        img: "images/news4.png",
         name: "Заголовок",
         text: "ОписаниОписание Описание  Описание Описание Описание  Описаниее",
         href: "/#"
       },
       {
-        img: "src/images/news5.png",
+        img: "images/news5.png",
         name: "Заголовок",
         text: "ОписаниОписание Описание  Описание Описание Описание  Описаниее",
         href: "/#"
       },
       {
-        img: "src/images/news6.png",
+        img: "images/news6.png",
         name: "Заголовок",
         text: "ОписаниОписание Описание  Описание Описание Описание  Описаниее",
         href: "/#"
